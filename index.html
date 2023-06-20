@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Resplandor</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               RESPL<span>ANDOR</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link active-link">Inicio</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#popular" class="nav__link">Popular</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#choose" class="nav__link">Sobre nosotros</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#features" class="nav__link">Novedades</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#products" class="nav__link">Productos</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__buttons">
+               <!-- Theme change button -->
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__bg"></div>
+
+            <div class="home__container container grid">
+               <div class="home__content grid">
+                  <div class="home__data">
+                     <h3 class="home__subtitle">
+                        Las mejores lamparas
+                     </h3>
+
+                     <h1 class="home__title">
+                        Unicas Para <br>
+                        Una Casa Unica
+                     </h1>
+
+                     <div class="home__buttons">
+                        <a href="#popular" class="button">
+                        ¡Enterate ahora!
+                        </a>
+
+                        <a href="https://www.youtube.com/watch?v=L_j-IKGU2CI" class="button__link" target="_blank">
+                           <i class="ri-play-circle-line"></i> Mira el video
+                        </a>
+                     </div>
+                  </div>
+
+                  <div class="home__info">
+                     <div>
+                        <h3 class="home__info-title">
+                           9k<span>+</span>
+                        </h3>
+
+                        <span class="home__info-subtitle">
+                           Productos Premium
+                        </span>
+                     </div>
+
+                     <div>
+                        <h3 class="home__info-title">
+                           2k<span>+</span>
+                        </h3>
+
+                        <span class="home__info-subtitle">
+                           Clientes Satisfechos
+                        </span>
+                     </div>
+
+                     <div>
+                        <h3 class="home__info-title">
+                           10<span>+</span>
+                        </h3>
+
+                        <span class="home__info-subtitle">
+                           Premios
+                        </span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="home__image">
+                  <div class="home__blob">
+                     <img src="assets/img/home-lamp.png" alt="imagen inicio" class="home__img">
+                     <h1 class="home__blob-title">Luces</h1>
+                  </div>
+
+                  <div class="home__shadow"></div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== POPULAR ====================-->
+         <section class="popular section" id="popular">
+            <div class="popular__container container">
+               <div class="popular__data">
+                  <h2 class="section__title">Productos populares</h2>
+
+                  <p class="popular__description">
+                     Encuentra nuestros mejores productos rápido y consigue la mejor iluminación para tu espacio.
+                  </p>
+               </div>
+
+               <div class="popular__content grid swiper">
+                  <div class="swiper-wrapper">
+                     <article class="popular__card swiper-slide">
+                        <div class="popular__blob">
+                           <img src="assets/img/modern-lamp.png" alt="imagen popular" class="popular__img">
+                        </div>
+
+                        <h3 class="popular__name">Lampara moderna</h3>
+                           <span class="popular__subtitle">Lampara colgante</span>
+                           <h3 class="popular__price">
+                              <span>$</span>5.000
+                           </h3>
+
+                           <button onclick="alertError()" class="popular__button">
+                              <i class="ri-add-line"></i>
+                           </button>
+                     </article>
+
+                     <article class="popular__card swiper-slide">
+                        <div class="popular__blob">
+                           <img src="assets/img/industrial-lamp.png" alt="imagen popular" class="popular__img">
+                        </div>
+
+                        <h3 class="popular__name">Lampara industrial</h3>
+                           <span class="popular__subtitle">Lampara colgante</span>
+                           <h3 class="popular__price">
+                              <span>$</span>6.000
+                           </h3>
+
+                           <button onclick="alertError()" class="popular__button">
+                              <i class="ri-add-line"></i>
+                           </button>
+                     </article>
+
+                     <article class="popular__card swiper-slide">
+                        <div class="popular__blob">
+                           <img src="assets/img/superbolw-lamp.png" alt="imagen popular" class="popular__img">
+                        </div>
+
+                        <h3 class="popular__name">Lampara redonda</h3>
+                           <span class="popular__subtitle">Lampara colgante</span>
+                           <h3 class="popular__price">
+                              <span>$</span>6.250
+                           </h3>
+
+                           <button onclick="alertError()" class="popular__button">
+                              <i class="ri-add-line"></i>
+                           </button>
+                     </article>
+
+                     <article class="popular__card swiper-slide">
+                        <div class="popular__blob">
+                           <img src="assets/img/ultrawide-lamp.png" alt="imagen popular" class="popular__img">
+                        </div>
+
+                        <h3 class="popular__name">Lampara ancha</h3>
+                           <span class="popular__subtitle">Lampara colgante</span>
+                           <h3 class="popular__price">
+                              <span>$</span>6.500
+                           </h3>
+
+                           <button onclick="alertError()" class="popular__button">
+                              <i class="ri-add-line"></i>
+                           </button>
+                     </article>
+
+                     <article class="popular__card swiper-slide">
+                        <div class="popular__blob">
+                           <img src="assets/img/roundness-light.png" alt="imagen popular" class="popular__img">
+                        </div>
+
+                        <h3 class="popular__name">Lampara ovalada</h3>
+                           <span class="popular__subtitle">Lampara colgante</span>
+                           <h3 class="popular__price">
+                              <span>$</span>7.000
+                           </h3>
+
+                           <button onclick="alertError()" class="popular__button">
+                              <i class="ri-add-line"></i>
+                           </button>
+                     </article>
+                  </div>
+
+                  <!-- Navegations buttons -->
+                  <div class="swiper-button-prev">
+                     <i class="ri-arrow-left-s-line"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                     <i class="ri-arrow-right-s-line"></i>
+                  </div>
+
+               </div>
+            </div>
+         </section>
+
+         <!--==================== CHOOSE ====================-->
+         <section class="choose section" id="choose">
+            <div class="choose__container container grid">
+               <div class="choose__image">
+                  <div class="choose__blob">
+                     <img src="assets/img/choose-lamp.png" alt="elige imagen" class="choose__img">
+                     <h1 class="choose__blob-title">BRILLANTE</h1>
+                  </div>
+
+                  <div class="choose__shadow"></div>
+               </div>
+
+               <div class="choose__content">
+                  <div class="choose__data">
+                     <h2 class="section__title">¿Por qué elegirnos?</h2>
+
+                     <p class="choose__description">
+                        Nuestros productos han ganado varios premios y tenemos la garantía de una calidad sin precedentes. 
+                     </p>
+                  </div>
+
+                  <div class="choose__faq">
+                     <div class="choose__faq-item">
+                        <div class="choose__faq-header">
+                           <div class="choose__faq-icon">
+                              <i class="ri-add-line"></i>
+                           </div>
+                           <h3 class="choose__faq-title">Nuevos diseños frecuentemente</h3>
+                        </div>
+
+                        <div class="choose__faq-content">
+                           <p class="choose__faq-description">
+                              Hacemos nuevos diseños todos los años, de lo más novedoso y con la calidad como prioridad maxima.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="choose__faq-item">
+                        <div class="choose__faq-header">
+                           <div class="choose__faq-icon">
+                              <i class="ri-add-line"></i>
+                           </div>
+                           <h3 class="choose__faq-title">Producción original</h3>
+                        </div>
+
+                        <div class="choose__faq-content">
+                           <p class="choose__faq-description">
+                              Somos la productora más grandes en lamparas con el precio más competivo en el mercado.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="choose__faq-item">
+                        <div class="choose__faq-header">
+                           <div class="choose__faq-icon">
+                              <i class="ri-add-line"></i>
+                           </div>
+                           <h3 class="choose__faq-title">Producción con stock</h3>
+                        </div>
+
+                        <div class="choose__faq-content">
+                           <p class="choose__faq-description">
+                              No te quedaras sin el producto que haz elegido, siempre tenemos la cantidad necesaria.
+                           </p>
+                        </div>
+                     </div>
+
+                     <div class="choose__faq-item">
+                        <div class="choose__faq-header">
+                           <div class="choose__faq-icon">
+                              <i class="ri-add-line"></i>
+                           </div>
+                           <h3 class="choose__faq-title">Controles de calidad</h3>
+                        </div>
+
+                        <div class="choose__faq-content">
+                           <p class="choose__faq-description">
+                              Nuestro equipo de calidad hace el mejor trabajo para entregarte un producto en exelente estado.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== FEATURES ====================-->
+         <section class="features section" id="features">
+            <div class="features__container container grid">
+               <div class="features__image">
+                  <div class="features__blob">
+                     <img src="assets/img/features-lamp.png" alt="caracteristicas imagen" class="features__img">
+                     <h1 class="features__blob-title">CALIDA</h1>
+                  </div>
+
+                  <div class="features__shadow"></div>
+               </div>
+
+               <div class="features__content">
+                  <div class="features__data">
+                     <h2 class="section__title">Ultimas novedades</h2>
+
+                     <p class="features__description">
+                        Siempre ofrecemos las ultimas y mejores caracteristicas a nuestros clientes, de la mano de tecnologías de gran nombre.
+                     </p>
+                  </div>
+
+                  <div class="features__info">
+                     <div class="features__info-card">
+                        <h3 class="features__info-title">
+                           Configuración <br> de voltaje
+                        </h3>
+                     </div>
+
+                     <div class="features__info-card">
+                        <h3 class="features__info-title">
+                           Control con <br> aplicación
+                        </h3>
+                     </div>
+
+                     <div class="features__info-card">
+                        <h3 class="features__info-title">
+                           Configuración <br> por horario
+                        </h3>
+                     </div>
+
+                     <div class="features__info-card">
+                        <h3 class="features__info-title">
+                           Control <br> de voz
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== PRODUCTS ====================-->
+         <section class="products section" id="products">
+            <div class="products__container container grid">
+               <div class="products__data">
+                  <h2 class="section__title">Todos nuestros productos</h2>
+
+                  <p class="products__description">
+                     Descubre todos nuestros productos en la lista completa.
+                  </p>
+               </div>
+
+               <div class="products__content grid">
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/nakedness-lamp.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara bar</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>4.000
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/modern-lamp.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara moderna</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>5.000
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/industrial-lamp.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara industrial</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>6.000
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/superbolw-lamp.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara redonda</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>6.250
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/ultrawide-lamp.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara ancha</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>6.500
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/roundness-light.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara ovalada</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>7000
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/stickness-light.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara entubada</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>7.250
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+
+                  <article class="products__card">
+                     <div class="products__blob">
+                        <img src="assets/img/superjet-light.png" alt="productos imagenes" class="products__img">
+                     </div>
+
+                     <h3 class="products__name">Lampara Elegante</h3>
+                     <span class="products__subtitle">Lampara colgante</span>
+                     <h3 class="products__price">
+                        <span>$</span>7.500
+                     </h3>
+
+                     <button onclick="alertError()" class="products__button">
+                        <i class="ri-add-line"></i>
+                     </button>
+                  </article>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            <div class="join__container container grid">
+               <div class="join__bg grid">
+                  <div class="join__image">
+                     <div class="join__blob">
+                        <img src="assets/img/join-lamp.png" alt="unete imagen" class="join__img">
+                        <h1 class="join__blob-title">LUZ</h1>
+                     </div>
+
+                     <div class="join__shadow"></div>
+                  </div>
+
+                  <div class="join__content grid">
+                     <div class="join__data">
+                        <h2 class="section__title">¡Unete ahora mismo!</h2>
+
+                        <p class="join__description">
+                           No te pierdas esta oportunidad <br>
+                           hay descuentos para todos los miembros.
+                        </p>
+                     </div>
+
+                     <form class="join__form">
+                        <input type="email" placeholder="Tu Email" class="join__input" name="mail" required>
+
+                        <button class="button join__button">
+                           Enviar
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <div>
+                  <a href="#home" class="footer__logo">
+                     RESPL<span>ANDOR</span>
+                  </a>
+
+                  <div class="footer__description">
+                     Tenemos el objetivo de brindar el mejor servicio y convertirnos en una distribuidora de confianza.
+                  </div>
+               </div>
+
+               <div class="footer__data grid">
+                  <div>
+                  <h3 class="footer__title">Información</h3>
+                     <ul class="footer__links">
+                        <li>
+                           <a href="#popular" class="footer__link">Popular</a>
+                        </li>
+
+                        <li>
+                           <a href="#choose" class="footer__link">Sobre nosotros</a>
+                        </li>
+
+                        <li>
+                           <a href="#features" class="footer__link">Novedades</a>
+                        </li>
+
+                        <li>
+                           <a href="#products" class="footer__link">Productos</a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div>
+                  <h3 class="footer__title">Siguenos</h3>
+                     
+                     <div class="footer__social">
+                        <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                           <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                           <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://twitter.com/?lang=es" target="_blank" class="footer__social-link">
+                           <i class="ri-twitter-line"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer__group">
+               <div class="footer__terms">
+                  <a href="" class="">Terminos y condiciones</a>
+                  <a href="" class="">Politicas de privicidad</a>
+               </div>
+
+               <span class="footer__copy">
+                  &#169; Copyright Mamone. All rights reserved
+               </span>
+            </div>
+         </div>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <a href="#" onclick="sendEmail('Hollaaaaa')">Hola</a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+
+      <!--=============== ALERT ===============-->
+      <script>
+         function alertError() {
+            alert("Disculpe, esta página no cuenta con tienda aún");
+         }
+      </script>
+   </body>
+</html>
